@@ -1,7 +1,10 @@
 <template>
   <div class="player" :class="classNames">
-    <div ref="player" class="player-container"></div>
-    <!-- <div class="player-loading" v-if="status !== 'play'"><i class="fa fa-pulse fa-spinner"></i></div> -->
+    <div ref="player" class="player-container">
+      <div class="player-poster" :class="classNames" v-if="poster && status !== 'play'" :style="posterStyles">
+        <button class="play-button" @click="onClickPoster"></button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -98,6 +101,13 @@ export default {
     isLive() {
       return this.live ? true : false
     },
+    posterStyles() {
+      return {
+        'background-size': this.mode || 'contain',
+        'background-position': 'center center',
+        'background-image': `url('${this.poster}')`
+      }
+    },
     classNames() {
       let classNames = []
 
@@ -147,6 +157,7 @@ export default {
         loop: this.loop,
         mode: this.mode,
         portrait: this.portrait,
+        poster: this.poster,
         played: 0,
       }
     }
@@ -181,6 +192,8 @@ export default {
       debug( TAG, 'initPlayer' )
 
       window.onPlayerSDKReady(( SDK, playerURL ) => {
+
+        console.log( 'this.playerOptions', this.playerOptions )
 
         var player = new SDK.Player(this.$refs.player, {
           ...this.playerOptions,
@@ -306,6 +319,10 @@ export default {
       event.preventDefault();
       //action on double tap goes below
     },
+
+    onClickPoster() {
+      this.play()
+    }
   }
 }
 </script>

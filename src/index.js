@@ -4,7 +4,7 @@ import Player from './PlayerComponent.vue'
 const TAG = 'PLAYER_PLUGIN'
 const playerURL = 'https://player.boda.am'
 // const playerURL = 'http://localhost:3000'
-const playerVersion = '0.8.7'
+const playerVersion = '0.8.9'
 
 const plugin = {
   install (Vue, {loadComponent = true} = {}) {
