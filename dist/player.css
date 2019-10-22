@@ -1,0 +1,244 @@
+.player {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 0;
+}
+@media screen and (min-width: 0px) {
+  .player.no-ratio {
+    text-align: center;
+    font-size: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .player.no-ratio:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .player.no-ratio > div {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    font-size: 1rem;
+  }
+}
+.player.no-ratio > div {
+  width: 100%;
+  height: 100%;
+}
+.player.no-ratio > div > iframe {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 0px) {
+  .player.ratio-16-9 {
+    text-align: center;
+    font-size: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .player.ratio-16-9:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .player.ratio-16-9 > div {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 0px) {
+  .player.ratio-16-9 > div:after {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+  .player.ratio-16-9 > div > iframe {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+.player.ratio-16-9 > div > iframe {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 0px) {
+  .player.ratio-9-16 {
+    text-align: center;
+    font-size: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .player.ratio-9-16:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .player.ratio-9-16 > div {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 0px) {
+  .player.ratio-9-16 > div:after {
+    content: "";
+    display: block;
+    padding-top: 177.7777777778%;
+  }
+  .player.ratio-9-16 > div > iframe {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+.player.ratio-9-16 > div > iframe {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 0px) {
+  .player.ratio-4-3 {
+    text-align: center;
+    font-size: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .player.ratio-4-3:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .player.ratio-4-3 > div {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 0px) {
+  .player.ratio-4-3 > div:after {
+    content: "";
+    display: block;
+    padding-top: 75%;
+  }
+  .player.ratio-4-3 > div > iframe {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+.player.ratio-4-3 > div > iframe {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 0px) {
+  .player.ratio-3-4 {
+    text-align: center;
+    font-size: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .player.ratio-3-4:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .player.ratio-3-4 > div {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 0px) {
+  .player.ratio-3-4 > div:after {
+    content: "";
+    display: block;
+    padding-top: 133.3333333333%;
+  }
+  .player.ratio-3-4 > div > iframe {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+.player.ratio-3-4 > div > iframe {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 0px) {
+  .player.ratio-1, .player.ratio-1-1 {
+    text-align: center;
+    font-size: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .player.ratio-1:before, .player.ratio-1-1:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .player.ratio-1 > div, .player.ratio-1-1 > div {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 0px) {
+  .player.ratio-1 > div:after, .player.ratio-1-1 > div:after {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  .player.ratio-1 > div > iframe, .player.ratio-1-1 > div > iframe {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+.player.ratio-1 > div > iframe, .player.ratio-1-1 > div > iframe {
+  width: 100%;
+  height: 100%;
+}
